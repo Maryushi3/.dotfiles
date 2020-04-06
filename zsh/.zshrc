@@ -108,24 +108,7 @@ source $ZSH/oh-my-zsh.sh
 alias yeet='yay -Rsn'
 alias nay='yay -Rsn'
 alias yis='yay -S'
-
+alias ycc='yay -Sc'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/maryushi-san/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/maryushi-san/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/maryushi-san/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/maryushi-san/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# deactivate conda without breaking anything
-conda deactivate
